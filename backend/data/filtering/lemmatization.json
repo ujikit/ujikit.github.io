@@ -1,5 +1,4 @@
 {
-  "alamat":["alamat","asal"],
-  "rumah":["rumah","tinggal"],
+  "alamat":["alamat","asal", "tinggal"],
   "lengkap":["lengkap","panjang"]
 }
