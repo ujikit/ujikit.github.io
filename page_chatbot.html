@@ -63,7 +63,7 @@
     <script type="text/javascript">
       $(document).ready(function () {
 
-        let dataTimezone = $.ajax({type: "GET", url: "http://api.timezonedb.com/v2.1/get-time-zone?key=21TZ0ZYZ0WCL&format=json&by=zone&zone=Asia/Jakarta", async: false}).responseJSON;
+        let dataTimezone = $.ajax({type: "GET", url: "//api.timezonedb.com/v2.1/get-time-zone?key=21TZ0ZYZ0WCL&format=json&by=zone&zone=Asia/Jakarta", async: false}).responseJSON;
         let minuteAndSecond = dataTimezone.formatted.match(/\d\d:\d\d/gi)[0]
         let abbreviation = dataTimezone.abbreviation
 
