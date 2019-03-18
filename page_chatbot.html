@@ -464,7 +464,21 @@
                   </div>
                 </div>
               </div>
-              `);
+            `);
+            $('#conversation').append(`
+              <div class="row message-body">
+                <div class="col-sm-12 message-main-receiver">
+                  <div class="receiver">
+                    <div class="message-text">
+                      Ayo terus tanyakan dengan pertanyaan yang sama. Jawaban sistem tidak hanya satu lho.. ;)
+                    </div>
+                    <span class="message-time pull-right">
+                      ${minuteAndSecond} ${abbreviation}
+                    </span>
+                  </div>
+                </div>
+              </div>
+            `);
           },800);
         }
 
