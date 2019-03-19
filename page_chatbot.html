@@ -110,7 +110,7 @@
             $("#conversation").animate({scrollTop: $('#conversation').get(0).scrollHeight}, 1000);
             setTimeout(function(){
               $('#chat-sending').attr("disabled", false);
-              $('#chat-typing').val("nama lengkapmu ?");
+              $('#chat-typing').val(null);
               $('.load-chat').hide();
               response(message);
             },1900);
@@ -453,7 +453,7 @@
         function start () {
           return setTimeout(function(){
             $('#chat-sending').removeClass('disabled');
-            $('#chat-typing').val("nama lengkapmu ?");
+            $('#chat-typing').val(null);
             $('.load-chat').hide();
             $('#conversation').append(`
               <div class="row message-body">
