@@ -589,6 +589,15 @@ body {
   width:80px;
 }
 
+#chat-sending {
+    background-color: transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+}
+
 #salin-pertanyaan {
   color: #333;
 }
