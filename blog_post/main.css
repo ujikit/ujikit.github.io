@@ -6924,5 +6924,25 @@ a.panel-block:hover {
   border-bottom-color: #00d1b2;
 }
 
+/* Floating Icon */
+.float{
+	position:fixed;
+	width:35px;
+	height:35px;
+	bottom:20px;
+	right:20px;
+	background-color:#0c92a7;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #999;
+}
+
+.my-float{
+  font-size: 20px;
+	margin-top:8px;
+  margin-left:1.5px;
+}
+/* ./Floating Icon */
 
 /*# sourceMappingURL=bulma.css.map */
