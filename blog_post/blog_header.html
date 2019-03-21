@@ -1,41 +1,31 @@
-<div class="navbar-fixed">
-  <nav style="background-color:#0c92a7">
-    <div class="nav-wrapper">
-      <center class="hidden-md hidden-sm">
-        <a href="../index.html" class="brand-logo" style="color:white;font-size:16px;margin-top:3px"><b>Portofolio Ujikit</b></a>
-      </center>
-      <div class="visible-md visible-lg">
-        <a href="../index.html"><img src="../img/logo.png" class="pull-left" style="width:55px;margin-top:13px;margin-left:20px"></a>
-      </div>
-      <a href="javascript:void(0)" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="../page_blog.html">Blog <span class="new badge">1</span></a></li>
-        <li><a href="../page_daftar_aplikasiku.html">Daftar Aplikasiku <span class="new badge">2</span></a></li>
-      </ul>
+<nav class="navbar is-primary">
+  <div class="container">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="#" style="font-weight:bold;">
+        adam bray
+      </a>
+      <span class="navbar-burger burger" data-target="navMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
     </div>
-  </nav>
-</div>
-<ul class="sidenav" id="mobile-demo">
-  <li><a href="../page_blog.html">Blog <span class="new badge">1</span></a></li>
-  <li><a href="../page_daftar_aplikasiku.html">Daftar Aplikasiku <span class="new badge">2</span></a></li>
-</ul>
-
-<!-- Fitur -->
-<div class="fixed-action-btn">
-  <!-- <a class="btn-floating btn-large yellow darken-1 pulse" target="_blank" rel="noopener noreferrer" href="page_chatbot.html"> -->
-  <a class="btn-floating btn-large yellow darken-1 pulse">
-    <i class="material-icons">apps</i>
-  </a>
-  <ul>
-  <li><a class="btn-floating green" onclick="M.toast({html: 'Fitur ini belum berfungsi.', inDuration: 100, outDuration: 100})" href="javascript:void(0)"><i class="material-icons">publish</i></a></li>
-  <li><a class="btn-floating blue" target="_blank" rel="noopener noreferrer" href="../page_chatbot.html"><i class="material-icons">chat</i></a></li>
-</ul>
+    <div id="navMenu" class="navbar-menu">
+      <div class="navbar-end">
+        <a href="#" class="navbar-item is-active">Home</a>
+        <a href="#" class="navbar-item">Blog</a>
+      </div>
+    </div>
+  </div>
+</nav>
 
 <script type="text/javascript">
   $(document).ready(function(){
-    // index.html
-    // Materialize
-    $('.fixed-action-btn').floatingActionButton();
-    $('.sidenav').sidenav();
+    var burger = document.querySelector('.burger');
+    var nav = document.querySelector('#'+burger.dataset.target);
+    burger.addEventListener('click', function(){
+      burger.classList.toggle('is-active');
+      nav.classList.toggle('is-active');
+    });
   })
 </script>
