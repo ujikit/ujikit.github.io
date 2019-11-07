@@ -601,3 +601,7 @@ body {
 #salin-pertanyaan {
   color: #333;
 }
+
+::placeholder {
+  font-size: 0.85em;
+}
