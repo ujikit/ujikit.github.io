@@ -64,7 +64,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.11/lodash.min.js"></script>
     <script type="text/javascript">
       $(document).ready(function () {
-
+        window.onbeforeunload = function() { return 0; };
+        history.pushState(null, null, location.href);
+        window.onpopstate = function () {
+            history.go(1);
+        };
         // let dataTimezone = $.ajax({type: "GET", url: "//api.timezonedb.com/v2.1/get-time-zone?key=21TZ0ZYZ0WCL&format=json&by=zone&zone=Asia/Jakarta", async: false}).responseJSON;
         // let minuteAndSecond = dataTimezone.formatted.match(/\d\d:\d\d/gi)[0]
         // let abbreviation = dataTimezone.abbreviation
