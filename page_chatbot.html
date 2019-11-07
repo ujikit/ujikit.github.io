@@ -155,7 +155,9 @@
           let token = messages.split(" ");
           let new_token = [];
           for (var i = 0; i < token.length; i++) {
-            if (token[i].endsWith("mu")) { new_token.push(token[i].replace(/mu/g, "")); }
+            if (token[i].endsWith("mu") || token[i].endsWith("?") || token[i].endsWith("!")) { new_token.push(token[i].replace(/mu/g, "")); }
+            else if (token[i].endsWith("?")) { new_token.push(token[i].replace(/\?/g, "")); }
+            else if (token[i].endsWith("!")) { new_token.push(token[i].replace(/\!/g, "")); }
             else { new_token.push(token[i]); }
           }
           return new_token;
